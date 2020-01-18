@@ -1,10 +1,14 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000s\u0000k\u0000e\u0000l\u0000e\u0000t\u0000o\u0000n\u0000-\u0000e\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "Core",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/**/*.js",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,12 @@
   },
   "homepage": "https://github.com/livanvaldes084/skeleton-express-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pug": "2.0.0-rc.4",
+    "winston": "2.4.0"
+  },
+  "devDependencies": {
+    "eslint": "4.10.0",
+    "nodemon": "1.12.1"
   }
 }
